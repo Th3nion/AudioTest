@@ -20,6 +20,7 @@ public class Network implements Runnable, SendBuffer {
             listeners = new ArrayList<SendBuffer>();
             this.bufferedOutputStream = new BufferedOutputStream(socket.getOutputStream());
             this.bufferedInputStream = new BufferedInputStream(socket.getInputStream());
+            System.out.println("NETWORK OK");
         } catch (IOException e) {
             e.printStackTrace();
         }

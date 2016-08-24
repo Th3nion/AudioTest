@@ -5,6 +5,7 @@ import javax.sound.sampled.*;
  */
 public class Launcher {
     public static void main(String args[]){
+        System.out.println("Lancun Client");
         Network network = new Network();
 
         TargetDataLine line;
@@ -26,6 +27,7 @@ public class Launcher {
 
         }
         catch (Exception e) {
+            e.printStackTrace();
             System.err.println(e);
         }
     }
